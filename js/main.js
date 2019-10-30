@@ -9,7 +9,7 @@ $(function() {
 
     $(window).scroll(function() {
         let pos = $(window).scrollTop();
-        let pos2 = pos + 500;
+        let pos2 = $(window).scrollTop() + 50;
 
         currentScrollPosition(pos);
         currentMenu(pos2);
@@ -47,10 +47,13 @@ $(function() {
         
         menus.forEach( function(menu) {
             let top = $('#' + menu ).offset().top;
-            let scrollEnd = $(document).height() - $(window).height() - 300;
+            let scrollEnd = $(document).height() - $(window).height();
 
             if ( pos >= top || pos >= scrollEnd ) { 
                 toggleActiveClass(menu); 
+            }
+
+            if ( pos >= top || pos >= (scrollEnd - 300) ) { 
                 triggerAnimateClass(menu);
             }
             

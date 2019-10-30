@@ -334,6 +334,10 @@ nav .title a.title-logo img {
 }
 
 /* skill */
+#skill {
+    min-height: 700px;
+}
+
 .skill-container {
     display: flex;
     flex-flow: row wrap;
@@ -594,6 +598,10 @@ footer p {
         transition: all .4s linear;
     }
 
+    #skill {
+        min-height: 500px;
+    }
+
     .profile-list li h4 i {
         font-size: 15px;
         transform: translateY(-1px);
@@ -628,6 +636,7 @@ footer p {
     .portfolio-detail {        
         padding: 2rem 0;
     }
+
 }
 
 /* animate element */
