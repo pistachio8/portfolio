@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>정우정 포트폴리오</title>
-    <!-- <meta> description, type, title -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- in your header -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="site">
@@ -21,7 +21,10 @@
             <nav>
                 <div class="container">
                     <div class="title">
-                        <h1>Jeong UJeong</h1>
+                        <a href="index.html" role="button">Jeong UJeong</a>
+                        <a href="https://github.com/pistachio8" target="_blank" class="title-logo" role="button">
+                            <img src="./images/logo-github.png" alt="github">
+                        </a>
                     </div>
                     <div class="menu-container">
                         <div class="hamburger-menu">
@@ -30,10 +33,10 @@
                             </div>
                         </div>
                         <ul class="menu-list">
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#profile">PROFILE</a></li>
-                            <li><a href="#skill">SKILL</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#home" class="home active">HOME</a></li>
+                            <li><a href="#profile" class="profile">PROFILE</a></li>
+                            <li><a href="#skill" class="skill">SKILL</a></li>
+                            <li><a href="#portfolio" class="portfolio">PORTFOLIO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,50 +45,58 @@
         <!-- main -->
         <main>
             <section id="home" class="main-banner">
+                <div class="bg-wrapper"></div>
                 <div class="container">
-                    <div class="label">
-                        <!-- #퍼블리싱 #front-end #하드코딩 #꾸준함 #성실함 -->
-                        <div class="item">
-                            <div class="figure-wrapper">
-                                <div class="figure">
-                                    <!-- <img src="" alt="프론트엔드"> -->
-                                    <i class="material-icons">web</i>
-                                </div>
-                            </div>
-                            <div class="text-wrapper">
-                                <h6># Front-end</h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="figure-wrapper">
-                                <div class="figure">
-                                    <!-- <img src="./images/web-24px.svg" alt="하드코딩"> -->
-                                    <i class="material-icons">code</i>
-                                </div>
-                            </div>
-                            <div class="text-wrapper">
-                                <h6># 하드코딩</h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="figure-wrapper">
-                                <div class="figure">
-                                    <i class="material-icons">thumb_up</i>
-                                </div>
-                            </div>
-                            <div class="text-wrapper">
-                                <h6># 성실함</h6>
-                            </div>
-                        </div>
-                    </div>
                     <div class="introduce">
                         <div class="text-wrapper">
                             <h2>안녕하세요!</h2>
-                            <h3>웹의 접근성과 인터렉티브함을 즐기며 발전하는 웹 프론트엔드 개발자 정우정입니다.</h3>
+                            <h3>웹의 접근성과 인터렉티브함을 즐기는</h3>
+                            <h1>웹 프론트엔드 개발자 정우정입니다.</h1>
                         </div>
+
+                        <div class="label">
+                            <div class="row">
+                                <div class="item">
+                                    <div class="figure-wrapper">
+                                        <div class="figure">
+                                            <!-- <img src="" alt="프론트엔드"> -->
+                                            <i class="material-icons">web</i>
+                                        </div>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <h6># Front-end</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="figure-wrapper">
+                                        <div class="figure">
+                                            <!-- <img src="./images/web-24px.svg" alt="하드코딩"> -->
+                                            <i class="material-icons">code</i>
+                                        </div>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <h6># 하드코딩</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="figure-wrapper">
+                                        <div class="figure">
+                                            <i class="material-icons">thumb_up</i>
+                                        </div>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <h6># 성실함</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    
                 </div>
             </section>
+            <!-- #home: end -->
+
             <section id="profile">
                 <div class="container">
                     <div class="title-wrapper">
@@ -152,6 +163,8 @@
                     </div>
                 </div>
             </section>
+            <!-- #profile: end -->
+
             <section id="skill">
                 <div class="container">
                     <div class="title-wrapper">
@@ -162,37 +175,39 @@
                     <div class="skill-container">
                         <div class="image-wrapper">
                             <p class="skill-title a11y-hidden">HTML5</p>
-                            <div class="skill-grade-backgroud"></div>
+                            <div class="skill-grade-background range-html"></div>
                             <img src="./images/logo_html.png">
                         </div>
                         <div class="image-wrapper">
                             <p class="skill-title a11y-hidden">CSS3 & SCSS</p>
-                            <div class="skill-grade-backgroud"></div>
+                            <div class="skill-grade-background range-css"></div>
                             <img src="./images/logo_css3.png">
                         </div>
                         <div class="image-wrapper">
                             <p class="skill-title a11y-hidden">Vanila Javascript</p>
-                            <div class="skill-grade-backgroud"></div>
+                            <div class="skill-grade-background range-js"></div>
                             <img src="./images/logo_javscripnt.png">
                         </div>
                         <div class="image-wrapper">
                             <p class="skill-title a11y-hidden">jQuery</p>
-                            <div class="skill-grade-backgroud"></div>
+                            <div class="skill-grade-background range-jquery"></div>
                             <img src="./images/logo_jquery_1.png">
                         </div>
                         <div class="image-wrapper">
                             <p class="skill-title a11y-hidden">PHP</p>
-                            <div class="skill-grade-backgroud"></div>
+                            <div class="skill-grade-background range-php"></div>
                             <img src="./images/logo_php.png">
                         </div>
                         <div class="image-wrapper">
                             <p class="skill-title a11y-hidden">MYSQL</p>
-                            <div class="skill-grade-backgroud"></div>
+                            <div class="skill-grade-background range-mysql"></div>
                             <img src="./images/logo_mysql.png">
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- #skill: end -->
+
             <section id="portfolio">
                 <div class="container">
                     <div class="title-wrapper">
@@ -235,11 +250,19 @@
                     </div>
                 </div>
             </section>
+            <!-- #portfolio: end -->
         </main>
         <!-- footer -->
         <footer>
             <div>
-                <p>copyright 2019. Jeong UJeong. All rights reserved.</p>
+                <div class="contact">
+                    <p>010.8999.5486</p>
+                    <p>wjaden@gmail.com</p>
+                </div>
+                <div>
+                    <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었습니다.</p>
+                    <p>copyright 2019. Jeong UJeong. All rights reserved.</p>
+                </div>
             </div>
         </footer>
     </div>
