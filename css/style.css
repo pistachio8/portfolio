@@ -544,6 +544,7 @@ footer p {
     }
 
     .main-banner {
+        position: relative;
         height: 650px;
     }
 
