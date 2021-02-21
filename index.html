@@ -1,271 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>정우정 포트폴리오</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css" />
     <!-- in your header -->
     <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/jquery-3.3.1.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="site">
-        <!-- header -->
-        <header class="header">
-            <nav>
-                <div class="container">
-                    <div class="title">
-                        <a href="index.html" role="button">Jeong UJeong</a>
-                        <a href="https://github.com/pistachio8" target="_blank" class="title-logo" role="button">
-                            <img src="./images/logo-github.png" alt="github">
-                        </a>
-                    </div>
-                    <div class="menu-container">
-                        <div class="hamburger-menu">
-                            <div class="hamburger-icon">
-                                <div></div>
-                            </div>
-                        </div>
-                        <ul class="menu-list">
-                            <li><a href="#home" class="home active">HOME</a></li>
-                            <li><a href="#profile" class="profile">PROFILE</a></li>
-                            <li><a href="#skill" class="skill">SKILL</a></li>
-                            <li><a href="#portfolio" class="portfolio">PORTFOLIO</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- main -->
-        <main>
-            <section id="home" class="main-banner">
-                <div class="bg-wrapper"></div>
-                <div class="container">
-                    <div class="introduce">
-                        <div class="text-wrapper">
-                            <h2>안녕하세요!</h2>
-                            <h3>웹의 접근성과 인터렉티브함을 즐기는</h3>
-                            <h1>웹 프론트엔드 개발자 정우정입니다.</h1>
-                        </div>
-
-                        <div class="label">
-                            <div class="row">
-                                <div class="item">
-                                    <div class="figure-wrapper">
-                                        <div class="figure">
-                                            <!-- <img src="" alt="프론트엔드"> -->
-                                            <i class="material-icons">web</i>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6># Front-end</h6>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="figure-wrapper">
-                                        <div class="figure">
-                                            <!-- <img src="./images/web-24px.svg" alt="하드코딩"> -->
-                                            <i class="material-icons">code</i>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6># 하드코딩</h6>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="figure-wrapper">
-                                        <div class="figure">
-                                            <i class="material-icons">thumb_up</i>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6># 성실함</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- #home: end -->
-
-            <section id="profile">
-                <div class="container">
-                    <div class="title-wrapper">
-                        <h2>PROFILE</h2>
-                        <div class="under-line"></div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col">
-                            <div class="profile_image">
-                                <img src="./images/ujeong.jpg" alt="프로필 이미지">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h3>Jeong UJeong <small>정우정</small></h3>
-                            <ul class="profile-list">
-                                <li>
-                                    <h4>
-                                        <i class="material-icons">
-                                            label_important
-                                        </i>
-                                        1990.01.07 (만 29세)
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4>
-                                        <i class="material-icons">
-                                            label_important
-                                        </i>
-                                        2016.02 쌍용교육센터 교육과정 이수
-                                    </h4>
-                                    <p>스마트 기기</p>
-                                </li>
-                                <li>
-                                    <h4>
-                                        <i class="material-icons">
-                                            label_important
-                                        </i>
-                                        2016.06 (주)그리핀 프로젝트
-                                    </h4>
-                                    <p>자사 프로젝트 외 외주 웹사이트 퍼블리싱</p>
-                                    
-                                </li>
-                                <li>
-                                    <h4>
-                                        <i class="material-icons">
-                                            label_important
-                                        </i>
-                                        2017.03 (주)콜라주 프로젝트
-                                    </h4>
-                                    <p>자사 프로젝트 웹사이트 퍼블리싱 / 런칭 이후 프론트엔드 유지보수</p>
-                                </li>
-                                <li>
-                                    <h4>
-                                        <i class="material-icons">
-                                            label_important
-                                        </i>
-                                        2017.12 (주)페이버스 프로젝트
-                                    </h4>
-                                    <p>자사 프로젝트 웹사이트 전반적인 프론트엔드 및 일부 페이지 php 백엔드 개발 참여</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- #profile: end -->
-
-            <section id="skill">
-                <div class="container">
-                    <div class="title-wrapper">
-                        <h2>SKILL</h2>
-                        <div class="under-line"></div>
-                    </div>
-                    
-                    <div class="skill-container">
-                        <div class="image-wrapper">
-                            <p class="skill-title a11y-hidden">HTML5</p>
-                            <div class="skill-grade-background range-html"></div>
-                            <img src="./images/logo_html.png">
-                        </div>
-                        <div class="image-wrapper">
-                            <p class="skill-title a11y-hidden">CSS3 & SCSS</p>
-                            <div class="skill-grade-background range-css"></div>
-                            <img src="./images/logo_css3.png">
-                        </div>
-                        <div class="image-wrapper">
-                            <p class="skill-title a11y-hidden">Vanila Javascript</p>
-                            <div class="skill-grade-background range-js"></div>
-                            <img src="./images/logo_javscripnt.png">
-                        </div>
-                        <div class="image-wrapper">
-                            <p class="skill-title a11y-hidden">jQuery</p>
-                            <div class="skill-grade-background range-jquery"></div>
-                            <img src="./images/logo_jquery_1.png">
-                        </div>
-                        <div class="image-wrapper">
-                            <p class="skill-title a11y-hidden">PHP</p>
-                            <div class="skill-grade-background range-php"></div>
-                            <img src="./images/logo_php.png">
-                        </div>
-                        <div class="image-wrapper">
-                            <p class="skill-title a11y-hidden">MYSQL</p>
-                            <div class="skill-grade-background range-mysql"></div>
-                            <img src="./images/logo_mysql.png">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- #skill: end -->
-
-            <section id="portfolio">
-                <div class="container">
-                    <div class="title-wrapper">
-                        <h2>PORTFOLIO</h2>
-                        <div class="under-line"></div>
-                    </div>
-                    <div class="row">
-                        <article>
-                            <div class="figure-wrapper">
-                                <img src="./images/portfolio_favvrs.png" alt="favvrs project">
-                            </div>
-                            <div class="portfolio-detail">
-                                <h3 class="detail_title">
-                                    페이버스(favvrs)
-                                </h3>
-                                <p>
-                                    SNS 서비스 인스타그램 다이렉트 메시지(DM)를 이용한 마케팅 광고 서비스를 제공하는 웹 프로젝트였습니다.<br>
-                                    PHP로 회원가입, 게시판, 관리자 리스트 페이지 구현하였고 전반적인 퍼블리싱 작업을 하였습니다. <br><br>
-                                    <strong>참여도: 프론트엔드(60%) / 백엔드(20%)</strong>
-                                </p>
-                                <a class="btn-portfolio_link" href="https://favvrs.com" target="_blank">홈페이지 이동하기</a>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="figure-wrapper">
-                                <img src="./images/portfolio_ifshop.png" alt="ifshop project">
-                            </div>
-                            <div class="portfolio-detail">
-                                <h3 class="detail_title">
-                                    INSTA.FEED.SHOP
-                                </h3>
-                                <p>
-                                    인스타그램 오픈 소스 라이브러리(REST API)를 이용하여 관련 계정 피드를 가져와 피드 관련 상품 쇼핑몰로 이동하는 방식의 사이트입니다.<br> 
-                                    페이버스 서비스의 설계를 기반으로 하여 서브 프로젝트 형식으로 mysql, PHP, Javascript & jQuery를 사용하여 단독으로 제작하였습니다.<br><br> 
-                                    <strong>참여도: 프론트엔드(100%) / 백엔드(100%)</strong>
-                                </p>
-                                <a class="btn-portfolio_link" href="https://ifshop.me" target="_blank">홈페이지 이동하기</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <!-- #portfolio: end -->
-        </main>
-        <!-- footer -->
-        <footer>
-            <div>
-                <div class="contact">
-                    <p>010.8999.5486</p>
-                    <p>wjaden@gmail.com</p>
-                </div>
-                <div>
-                    <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었습니다.</p>
-                    <p>copyright 2019. Jeong UJeong. All rights reserved.</p>
-                </div>
+      <!-- header -->
+      <header class="header">
+        <nav>
+          <div class="container">
+            <div class="title">
+              <a href="index.html" role="button">Jeong UJeong</a>
+              <a
+                href="https://github.com/pistachio8"
+                target="_blank"
+                class="title-logo"
+                role="button"
+              >
+                <img src="./images/logo-github.png" alt="github" />
+              </a>
             </div>
-        </footer>
+            <div class="menu-container">
+              <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                  <div></div>
+                </div>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#home" class="home active">HOME</a></li>
+                <li><a href="#profile" class="profile">PROFILE</a></li>
+                <li><a href="#skill" class="skill">SKILL</a></li>
+                <li><a href="#portfolio" class="portfolio">PORTFOLIO</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main -->
+      <main>
+        <section id="home" class="main-banner">
+          <div class="bg-wrapper"></div>
+          <div class="container">
+            <div class="introduce">
+              <div class="text-wrapper">
+                <h2>안녕하세요!</h2>
+                <h3>웹의 접근성과 인터렉티브함을 즐기는</h3>
+                <h1>웹 프론트엔드 개발자 정우정입니다.</h1>
+              </div>
+
+              <div class="label">
+                <div class="row">
+                  <div class="item">
+                    <div class="figure-wrapper">
+                      <div class="figure">
+                        <!-- <img src="" alt="프론트엔드"> -->
+                        <i class="material-icons">web</i>
+                      </div>
+                    </div>
+                    <div class="text-wrapper">
+                      <h6># Front-end</h6>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="figure-wrapper">
+                      <div class="figure">
+                        <!-- <img src="./images/web-24px.svg" alt="하드코딩"> -->
+                        <i class="material-icons">code</i>
+                      </div>
+                    </div>
+                    <div class="text-wrapper">
+                      <h6># 하드코딩</h6>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="figure-wrapper">
+                      <div class="figure">
+                        <i class="material-icons">thumb_up</i>
+                      </div>
+                    </div>
+                    <div class="text-wrapper">
+                      <h6># 성실함</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- #home: end -->
+
+        <section id="profile">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2>PROFILE</h2>
+              <div class="under-line"></div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="profile_image">
+                  <img src="./images/ujeong.jpg" alt="프로필 이미지" />
+                </div>
+              </div>
+              <div class="col">
+                <h3>Jeong UJeong <small>정우정</small></h3>
+                <ul class="profile-list">
+                  <li>
+                    <h4>
+                      <i class="material-icons">
+                        label_important
+                      </i>
+                      1990.01.07 (만 32세)
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <i class="material-icons">
+                        label_important
+                      </i>
+                      2016.02 쌍용교육센터 교육과정 이수
+                    </h4>
+                    <p>스마트 기기</p>
+                  </li>
+                  <li>
+                    <h4>
+                      <i class="material-icons">
+                        label_important
+                      </i>
+                      2016.06 (주)그리핀 프로젝트
+                    </h4>
+                    <p>자사 프로젝트 외 외주 웹사이트 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <h4>
+                      <i class="material-icons">
+                        label_important
+                      </i>
+                      2017.03 (주)콜라주 프로젝트
+                    </h4>
+                    <p>
+                      자사 프로젝트 웹사이트 퍼블리싱 / 런칭 이후 프론트엔드
+                      유지보수
+                    </p>
+                  </li>
+                  <li>
+                    <h4>
+                      <i class="material-icons">
+                        label_important
+                      </i>
+                      2017.12 (주)페이버스 프로젝트
+                    </h4>
+                    <p>
+                      자사 프로젝트 웹사이트 전반적인 프론트엔드 및 일부 페이지
+                      php 백엔드 개발 참여
+                    </p>
+                  </li>
+                  <li>
+                    <h4>
+                      <i class="material-icons">
+                        label_important
+                      </i>
+                      2020.08 주식회사 엔터플
+                    </h4>
+                    <p>
+                      자사 솔루션 Synctree Studio의 전반적인 프론트엔드 개발
+                      참여
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- #profile: end -->
+
+        <section id="skill">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2>SKILL</h2>
+              <div class="under-line"></div>
+            </div>
+
+            <div class="skill-container">
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">HTML5</p>
+                <div class="skill-grade-background range-html"></div>
+                <img src="./images/logo_html.png" />
+              </div>
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">CSS3 & SCSS</p>
+                <div class="skill-grade-background range-css"></div>
+                <img src="./images/logo_css3.png" />
+              </div>
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">Vanila Javascript</p>
+                <div class="skill-grade-background range-js"></div>
+                <img src="./images/logo_javscripnt.png" />
+              </div>
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">jQuery</p>
+                <div class="skill-grade-background range-jquery"></div>
+                <img src="./images/logo_jquery_1.png" />
+              </div>
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">React</p>
+                <div class="skill-grade-background range-react"></div>
+                <img src="./images/logo_react.png" />
+              </div>
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">PHP</p>
+                <div class="skill-grade-background range-php"></div>
+                <img src="./images/logo_php.png" />
+              </div>
+              <div class="image-wrapper">
+                <p class="skill-title a11y-hidden">MYSQL</p>
+                <div class="skill-grade-background range-mysql"></div>
+                <img src="./images/logo_mysql.png" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- #skill: end -->
+
+        <section id="portfolio">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2>PORTFOLIO</h2>
+              <div class="under-line"></div>
+            </div>
+            <div class="row">
+              <article>
+                <div class="figure-wrapper">
+                  <img
+                    src="./images/portfolio_favvrs.png"
+                    alt="nntuple project"
+                  />
+                </div>
+                <div class="portfolio-detail">
+                  <h3 class="detail_title">
+                    싱크트리(Synctree)
+                  </h3>
+                  <p>
+                    직접 Code를 입력하는 것이 아닌 Block을 사용해 편하게 개발할
+                    수 있는 노코드 올인원 API 솔루션으로 개발 환경에 구애받지
+                    않고 API를 개발, 개발한 API를 이용하여 독립적인
+                    마이크로서비스를 구현하고 관리, 사용할 수 있는 웹
+                    서비스입니다.<br />
+                    Forum 게시판 구현, React chart 라이브러리인 ReCharts를
+                    이용하여 솔루션 상품 모니터링 대시보드 개발 Blockly.js
+                    라이브러리를 이용하여 기능 구현 등 전반적인 프론트엔드
+                    개발에 참여하였습니다.
+
+                    <strong>참여도: 프론트엔드(40%)</strong>
+                  </p>
+                  <a
+                    class="btn-portfolio_link"
+                    href="https://synctreestudio.com"
+                    target="_blank"
+                    >홈페이지 이동하기</a
+                  >
+                </div>
+              </article>
+              <article>
+                <div class="figure-wrapper">
+                  <img
+                    src="./images/portfolio_favvrs.png"
+                    alt="favvrs project"
+                  />
+                </div>
+                <div class="portfolio-detail">
+                  <h3 class="detail_title">
+                    페이버스(favvrs)
+                  </h3>
+                  <p>
+                    SNS 서비스 인스타그램 다이렉트 메시지(DM)를 이용한 마케팅
+                    광고 서비스를 제공하는 웹 프로젝트였습니다.<br />
+                    PHP로 회원가입, 게시판, 관리자 리스트 페이지 구현하였고
+                    전반적인 퍼블리싱 작업을 하였습니다. <br /><br />
+                    <strong>참여도: 프론트엔드(60%) / 백엔드(20%)</strong>
+                  </p>
+                  <a
+                    class="btn-portfolio_link"
+                    href="https://favvrs.com"
+                    target="_blank"
+                    >홈페이지 이동하기</a
+                  >
+                </div>
+              </article>
+              <article>
+                <div class="figure-wrapper">
+                  <img
+                    src="./images/portfolio_ifshop.png"
+                    alt="ifshop project"
+                  />
+                </div>
+                <div class="portfolio-detail">
+                  <h3 class="detail_title">
+                    INSTA.FEED.SHOP
+                  </h3>
+                  <p>
+                    인스타그램 오픈 소스 라이브러리(REST API)를 이용하여 관련
+                    계정 피드를 가져와 피드 관련 상품 쇼핑몰로 이동하는 방식의
+                    사이트입니다.<br />
+                    페이버스 서비스의 설계를 기반으로 하여 서브 프로젝트
+                    형식으로 mysql, PHP, Javascript & jQuery를 사용하여 단독으로
+                    제작하였습니다.<br /><br />
+                    <strong>참여도: 프론트엔드(100%) / 백엔드(100%)</strong>
+                  </p>
+                  <a
+                    class="btn-portfolio_link"
+                    href="https://ifshop.me"
+                    target="_blank"
+                    >홈페이지 이동하기</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- #portfolio: end -->
+      </main>
+      <!-- footer -->
+      <footer>
+        <div>
+          <div class="contact">
+            <p>010.8999.5486</p>
+            <p>wjaden@gmail.com</p>
+          </div>
+          <div>
+            <p>
+              본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로
+              제작되었습니다.
+            </p>
+            <p>copyright 2019. Jeong UJeong. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
